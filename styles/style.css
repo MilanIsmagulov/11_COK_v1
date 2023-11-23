@@ -37,8 +37,6 @@ a{
 
 .profi_logo{
     margin-bottom: 50px;
-    width: 30px;
-    height: 200;
     ;
 }
 
@@ -490,7 +488,7 @@ a{
 .popup_content {
     background-color: white;
     color: black;
-    max-width: 700px;
+    max-width: 1000px;
     border-radius: 15px;
     padding: 25px;
 }

@@ -109,6 +109,7 @@ let chekBtn = document.querySelector('#check_button_1');
                         disButton.classList.add('disabled_button');
                         Povtor.classList.remove('disabled_button');
                         Dalee.classList.remove('disabled_button');
+                        form.children[questions[0].right].classList.add('correct');
                         let wrAns = input.dataset.answer
                         form.children[wrAns].classList.add('incorrect');
                         for (let i = 0; i <= 3; i++){

@@ -30,7 +30,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 95px;
     color: white;
     background-color: black;
 }
@@ -43,8 +42,12 @@ body{
     border: solid 2px;
     border-radius: 35px;
     width: 300px;
-    margin-left: 25px;
     transition: all 0.3s;
+}
+
+.black_header h1{
+    font-size: clamp(25px,4vw,35px) !important;
+    width: 60% !important;
 }
 
 .black_header a:hover{
@@ -53,11 +56,23 @@ body{
     color: black;
 }
 
+.black_header h1{
+    font-size: clamp(25px,2vw,30px) !important;
+    width: 60% !important;
+}
+/* p {
+    margin-left: 0 !important;
+    font-size: clamp(20px,2vw,25px) !important;
+} */
+.questions p span{
+    font-size: clamp(30px,3vw,35px) !important;
+}
+
+
 .content{
     margin-right: 25px;
     border-radius: 50px;
     background-color: rgb(255, 255, 255);
-    height: 84%;
 }
 
 .answer_buttons{
@@ -191,57 +206,6 @@ input:disabled {
     background: rgb(255, 144, 144);
 }
 
-@media (max-width: 1180px) {
-    body{
-        width: 100%;
-
-    }
-
-    .answers_btn form {
-        width: 700px;
-        
-    }
-    .answers_btn form div {
-        width: 700px;
-
-    }
-    .choices_div2{
-        width: 700px;
-    }
-    .question_part #question {
-        padding: 10px;
-        margin: 10px;
-        margin-top: 10px;
-    }
-    .button_part {
-        margin-top: 5px;
-        padding-bottom: 50px;
-    }
-
-    .step_marker_and_buttons {
-        width: 90vw;
-        padding-bottom: 0px;
-        
-    }
-
-    .answers_btn form div {
-        margin: 5px;
-    }
-
-    .main_buttons button {
-        width: 130px;
-    }
-    .questions{
-        margin: 15px;
-    }
-    .questions p{
-        padding:  10px;
-    }
-    .answers_btn form {
-        margin-bottom: 20px;
-    }
-}
-
 .theory_eom{
     display: flex;
     align-items: center;
@@ -273,23 +237,55 @@ input:disabled {
     font-weight: 500;
 }
 
-@media (max-width: 820px) {
-    .black_header{
-        height: 150px;
+@media (max-width: 1366px) {
+    .theory_eom {
+        align-items: flex-start !important;
     }
+    .theory_eom img{
+        margin-right: 1vw !important;
+        height: auto !important;
+        min-width: 300px !important;
+        width: 30% !important;
+    }
+}
 
+@media (max-width: 1180px) {
     .black_header h1{
-        width: 70%;
+        width: 50%;
     }
-
+    .theory_eom{
+        padding: 35px !important;
+        flex-direction: column;
+        align-items: center !important;
+    }
+    .theory_eom img{
+        margin-right: 1vw !important;
+        margin-left: 1vw !important;
+        height: auto !important;
+        min-width: 400px !important;
+        width: 50% !important;
+    }
+    .question_part #question {
+        padding: 10px;
+        margin: 10px;
+        margin-top: 10px;
+    }
+    .button_part {
+        margin-top: 5px;
+        padding-bottom: 50px;
+    }
     .step_marker_and_buttons{
         display: flex;
-        width: 93vw;
     }
+    .content{
+        margin-right: 0;
+    }
+    .popup_text img{
+        height: 100%;
+    }
+}
 
-    .theory_eom{
-        height: 600px;
-    }
+@media (max-width: 820px) {
     .content{
         margin-right: 0;
     }
@@ -299,8 +295,4 @@ input:disabled {
     .second{
         flex-direction: column;
     }
-}
-
-@media (max-width: 1180px) {
-
 }

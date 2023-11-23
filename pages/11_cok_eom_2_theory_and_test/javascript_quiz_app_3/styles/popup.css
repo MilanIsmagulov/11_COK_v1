@@ -1,5 +1,5 @@
 .popup_text{
-    height: 700px;
+    height: 85% !important;
     overflow-y: auto;
     scroll-snap-align: start;
     padding: 15px;
@@ -19,20 +19,20 @@
 }
 
 .right_side{
-    margin: 45px;
+    margin: 3vw !important;
 }
 
 .right_side p{
     font-weight: 500;
     color: black;
-    font-size: 25px;
+    font-size: clamp(20px,2vw,25px) !important;
 }
 
 .right_side span{
     padding-top: 15px;
     font-weight: 700;
     color: black;
-    font-size: 25px;
+    font-size: clamp(20px,2vw,25px) !important;
 }
 
 .key_word_text{
@@ -127,8 +127,8 @@
 .popup_content {
     background-color: white;
     color: black;
-    min-width: 700px;
-    max-width: 1500px;
+    width: clamp(300px,80vw,1800px) !important;
+    height: clamp(300px,70vh,1000px) !important;
     height: 700px;
     border-radius: 25px;
     padding: 25px;

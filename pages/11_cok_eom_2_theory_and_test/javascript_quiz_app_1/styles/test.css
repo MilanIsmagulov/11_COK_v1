@@ -166,8 +166,8 @@ body{
 
 
 .step_marker_and_buttons{
-    margin-left: 25px;
-    margin-right: 25px;
+    padding: 25px;
+    margin-top: 8vh !important;
     align-items: flex-end;
     justify-content: space-between;
     display: flex;
@@ -277,10 +277,4 @@ body{
     .main_buttons button {
         width: 130px;
     }
-}
-
-.step_marker_and_buttons{
-    position: absolute;
-    bottom: 50px;
-    width: 96%;
 }

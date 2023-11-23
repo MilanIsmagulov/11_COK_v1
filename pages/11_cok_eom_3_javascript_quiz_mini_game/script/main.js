@@ -453,7 +453,6 @@ let cardsPlace = document.querySelector('.questions_cards_side');
 let formsForAnswers = document.querySelectorAll('.answer_form');
 formsForAnswers.forEach((elem, index)=>{
     let answerInput = document.querySelectorAll('.answer_div')
-    console.log(elem)
 })
 
 

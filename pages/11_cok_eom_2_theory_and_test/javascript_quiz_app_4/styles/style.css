@@ -30,7 +30,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 95px;
     color: white;
     background-color: black;
 }
@@ -43,7 +42,6 @@ body{
     border: solid 2px;
     border-radius: 35px;
     width: 300px;
-    margin-left: 25px;
     transition: all 0.3s;
 }
 
@@ -53,11 +51,26 @@ body{
     color: black;
 }
 
+.black_header h1{
+    font-size: clamp(25px,2vw,30px) !important;
+    width: 60% !important;
+}
+p {
+    margin-left: 0 !important;
+    font-size: clamp(20px,2vw,25px) !important;
+}
+.quiz_window p span{
+    font-size: clamp(30px,3vw,35px) !important;
+}
+
+.second{
+    margin-left: 75px !important;
+}
+
 .content{
     margin-right: 25px;
     border-radius: 50px;
     background-color: rgb(255, 255, 255);
-    height: 84%;
 }
 
 .answer_buttons{
@@ -191,56 +204,7 @@ input:disabled {
     background: rgb(255, 144, 144);
 }
 
-@media (max-width: 1180px) {
-    body{
-        width: 100%;
 
-    }
-
-    .answers_btn form {
-        width: 700px;
-        
-    }
-    .answers_btn form div {
-        width: 700px;
-
-    }
-    .choices_div2{
-        width: 700px;
-    }
-    .question_part #question {
-        padding: 10px;
-        margin: 10px;
-        margin-top: 10px;
-    }
-    .button_part {
-        margin-top: 5px;
-        padding-bottom: 50px;
-    }
-
-    .step_marker_and_buttons {
-        width: 90vw;
-        padding-bottom: 0px;
-        
-    }
-
-    .answers_btn form div {
-        margin: 5px;
-    }
-
-    .main_buttons button {
-        width: 130px;
-    }
-    .questions{
-        margin: 15px;
-    }
-    .questions p{
-        padding:  10px;
-    }
-    .answers_btn form {
-        margin-bottom: 20px;
-    }
-}
 
 .theory_eom{
     display: flex;
@@ -254,6 +218,8 @@ input:disabled {
     align-items: center;
     flex-direction: row;
     margin: 0px;
+    padding-bottom: 2px !important;
+    padding-top: 1px !important;
     padding: 25px;
 }
 
@@ -275,14 +241,13 @@ input:disabled {
     border-bottom: solid 1px red;
     width: 95%;
     margin-left: 45px;
-    height: auto;
+    height: auto !important;
     margin-bottom: 50px;
 }
 
 .red_line_div img{
-    height: auto;
+    height: auto !important;
     width: 800px;
-
 }
 
 
@@ -324,22 +289,56 @@ input:disabled {
     font-weight: 500;
 }
 
-@media (max-width: 820px) {
-    .black_header{
-        height: 150px;
+@media (max-width: 1180px) {
+    .question_part #question {
+        padding: 10px;
+        margin: 10px;
+        margin-top: 10px;
     }
+    .theory_eom p{
+        margin-left: 0 !important;
+        font-size: 20px;
+    }
+    .button_part {
+        margin-top: 5px;
+        padding-bottom: 50px;
+    }
+    .second{
+        margin-left: 45px !important;
+    }
+    .black_header h1{
+        width: 50%;
+    }
+    .content{
+        margin-right: 0;
+    }
+    .popup_text img{
+        height: 100%;
+    }
+    .red_line_div{
+        height: auto !important;
+    }
+    .red_line_div img{
+        margin: 0 !important;
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+        height: auto !important;
+        width: 100% !important;
+    }
+}
 
+@media (max-width: 820px) {
     .black_header h1{
         width: 70%;
     }
-
-    .step_marker_and_buttons{
-        display: flex;
-        width: 93vw;
+    .theory_eom_row{
+        padding: 10px !important;
+        margin-left: 10px !important;
+        align-items: center;
+        flex-direction: column;
     }
-
-    .theory_eom{
-        height: 600px;
+    .red_line_div{
+        margin-left: 0 !important;
     }
     .content{
         margin-right: 0;
@@ -350,8 +349,12 @@ input:disabled {
     .second{
         flex-direction: column;
     }
-}
-
-@media (max-width: 1180px) {
-
+    .step_marker{
+        margin-bottom: 25px !important;
+    }
+    .step_marker_and_buttons{
+        align-items: center;
+        padding-bottom: 25px !important;
+        flex-direction: column !important;
+    }
 }

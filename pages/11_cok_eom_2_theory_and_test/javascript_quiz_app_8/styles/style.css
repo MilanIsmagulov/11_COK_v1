@@ -15,8 +15,6 @@ a{
 
 body{
     background: #fff;
-    height: 100vh;
-    width: 100vw;
 }
 
 .theory_for_test {
@@ -28,12 +26,11 @@ body{
 }
 
 .popup_image{
-
     margin: 15px;
     padding: 25px;
     border-radius: 35px;
     text-align: end;
-    width: 520px;
+    width: 420px;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -41,14 +38,19 @@ body{
     padding: 25px;
     padding-bottom: 0;
     padding-top: 0;
-    font-size: 20px;
+    font-size: clamp(15px,1vw,25px);
 }
 
 .popup_image button{
     width: 50px;
     height: 50px;
     border-radius: 25px;
-    background-color: rgb(2, 94, 161);
+    border: 0;
+    background-color: rgb(240, 240, 240);
+}
+
+.popup_image button:active{
+    background-color: rgb(147, 189, 219);
 }
 
 .questions span{
@@ -59,6 +61,10 @@ body{
     margin-right: 15px;
 }
 
+.second_popup{
+    height: clamp(300px,90vh,1200px) !important;
+    width: clamp(300px,80vw,1000px) !important;
+}
 
 .step_markers{
     position: absolute;
@@ -75,10 +81,16 @@ body{
 
 }
 
+#check_button_2{
+    margin-top: 5px;
+}
 
+#check_button_3{
+    margin-top: 5px;
+}
 
 .main_buttons{
-    margin-top: 45px;
+    margin-top: 10px;
     width: 98%;
     display: flex;
     align-items: center;
@@ -93,7 +105,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 95px;
     color: white;
     background-color: black;
 }
@@ -106,7 +117,6 @@ body{
     border: solid 2px;
     border-radius: 35px;
     width: 300px;
-    margin-left: 25px;
     transition: all 0.3s;
 }
 
@@ -114,6 +124,10 @@ body{
     transition: all 0.3s;
     background-color: white;
     color: black;
+}
+
+.black_header h1{
+    width: 60% !important;
 }
 
 .left_side{
@@ -341,12 +355,6 @@ body{
     font-size: 35px;
 }
 
-.correct_marker{
-    position: absolute;
-    top: -10px;
-    left: 3px;
-}
-
 .correct_marker img{
     height: 45px;
     width: 45px;
@@ -374,4 +382,26 @@ body{
     cursor: no-drop;
     background-color: grey;
     color: white;
+}
+
+.black_header h1{
+    font-size: clamp(25px,2vw,30px) !important;
+    width: 60% !important;
+}
+p {
+    margin-left: 0 !important;
+    font-size: clamp(20px,2vw,25px) !important;
+}
+.questions p{
+    padding: 0 !important;
+}
+.questions p span{
+    font-size: clamp(30px,3vw,35px) !important;
+}
+.questions div span{
+    font-size: clamp(30px,3vw,35px) !important;
+}
+
+.questions div{
+    font-size: clamp(20px,2vw,25px) !important;
 }

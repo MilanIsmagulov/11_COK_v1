@@ -108,6 +108,7 @@ let chekBtn = document.querySelector('#check_button_1');
                         localStorage.setItem('answer_' + numberOfQuestion, JSON.stringify({questionPlace: false}));
                         disButton.classList.add('disabled_button');
                         Povtor.classList.remove('disabled_button');
+                        form.children[questions[0].right].classList.add('correct');
                         Dalee.classList.remove('disabled_button');
                         let wrAns = input.dataset.answer
                         form.children[wrAns].classList.add('incorrect');

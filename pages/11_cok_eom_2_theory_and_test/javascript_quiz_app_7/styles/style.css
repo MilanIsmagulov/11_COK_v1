@@ -29,11 +29,15 @@ body{
 }
 
 .popup_image button{
-    height: 50px;
     width: 50px;
+    height: 50px;
     border-radius: 25px;
-    background-color: #0070c0;
-    margin-bottom: 25px;
+    border: 0;
+    background-color: rgb(240, 240, 240);
+}
+
+.popup_image button:active{
+    background-color: rgb(147, 189, 219);
 }
 
 .main_window{
@@ -46,7 +50,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 95px;
     color: white;
     background-color: black;
 }
@@ -59,7 +62,7 @@ body{
     border: solid 2px;
     border-radius: 35px;
     width: 300px;
-    margin-left: 25px;
+    margin-left: 1px;
     transition: all 0.3s;
 }
 
@@ -207,57 +210,6 @@ input:disabled {
     background: rgb(255, 144, 144);
 }
 
-@media (max-width: 1180px) {
-    body{
-        width: 100%;
-
-    }
-
-    .answers_btn form {
-        width: 700px;
-        
-    }
-    .answers_btn form div {
-        width: 700px;
-
-    }
-    .choices_div2{
-        width: 700px;
-    }
-    .question_part #question {
-        padding: 10px;
-        margin: 10px;
-        margin-top: 10px;
-    }
-    .button_part {
-        margin-top: 5px;
-        padding-bottom: 50px;
-    }
-
-    .step_marker_and_buttons {
-        width: 90vw;
-        padding-bottom: 0px;
-        
-    }
-
-    .answers_btn form div {
-        margin: 5px;
-    }
-
-    .main_buttons button {
-        width: 130px;
-    }
-    .questions{
-        margin: 15px;
-    }
-    .questions p{
-        padding:  10px;
-    }
-    .answers_btn form {
-        margin-bottom: 20px;
-    }
-}
-
 .theory_eom{
     display: flex;
     align-items: center;
@@ -311,8 +263,9 @@ input:disabled {
 }
 
 .theory_eom p{
-    font-size: 25px;
-
+    font-size: clamp(18px,1.8vw,25px);
+    color: #000;
+    font-weight: 500;
 }
 
 .main_image{
@@ -322,39 +275,24 @@ input:disabled {
     border-radius: 15px;
 }
 
-.theory_eom p{
-    color: #000;
-    font-weight: 500;
+.black_header h1{
+    font-size: clamp(25px,2vw,30px) !important;
+    width: 60% !important;
+}
+p {
+    margin-left: 0 !important;
+    font-size: clamp(20px,2vw,25px) !important;
+}
+.questions p{
+    padding: 0 !important;
+}
+.questions p span{
+    font-size: clamp(30px,3vw,35px) !important;
+}
+.questions div span{
+    font-size: clamp(30px,3vw,35px) !important;
 }
 
-@media (max-width: 820px) {
-    .black_header{
-        height: 150px;
-    }
-
-    .black_header h1{
-        width: 70%;
-    }
-
-    .step_marker_and_buttons{
-        display: flex;
-        width: 93vw;
-    }
-
-    .theory_eom{
-        height: 600px;
-    }
-    .content{
-        margin-right: 0;
-    }
-    .first{
-        flex-direction: column;
-    }
-    .second{
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 1180px) {
-
+.questions div{
+    font-size: clamp(20px,2vw,25px) !important;
 }

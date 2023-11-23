@@ -20,17 +20,11 @@ body{
     overflow-x: hidden;
 }
 
-.main_window{
-    height: 100%;
-    width: 100%;
-}
-
 .black_header{
     padding: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 95px;
     color: white;
     background-color: black;
 }
@@ -43,8 +37,11 @@ body{
     border: solid 2px;
     border-radius: 35px;
     width: 300px;
-    margin-left: 25px;
     transition: all 0.3s;
+}
+
+.black_header h1{
+    width: 60% !important;
 }
 
 .black_header a:hover{
@@ -52,6 +49,8 @@ body{
     background-color: white;
     color: black;
 }
+
+
 
 .content{
     margin-right: 25px;
@@ -191,54 +190,17 @@ input:disabled {
     background: rgb(255, 144, 144);
 }
 
-@media (max-width: 1180px) {
-    body{
-        width: 100%;
-
-    }
-
-    .answers_btn form {
-        width: 700px;
-        
-    }
-    .answers_btn form div {
-        width: 700px;
-
-    }
-    .choices_div2{
-        width: 700px;
-    }
-    .question_part #question {
-        padding: 10px;
-        margin: 10px;
-        margin-top: 10px;
-    }
-    .button_part {
-        margin-top: 5px;
-        padding-bottom: 50px;
-    }
-
-    .step_marker_and_buttons {
-        width: 90vw;
-        padding-bottom: 0px;
-        
-    }
-
-    .answers_btn form div {
-        margin: 5px;
-    }
-
-    .main_buttons button {
-        width: 130px;
-    }
-    .questions{
-        margin: 15px;
-    }
-    .questions p{
-        padding:  10px;
-    }
-    .answers_btn form {
-        margin-bottom: 20px;
-    }
+.black_header h1{
+    font-size: clamp(25px,2vw,30px) !important;
+    width: 60% !important;
 }
-
+p {
+    margin-left: 0 !important;
+    font-size: clamp(20px,2vw,25px) !important;
+}
+.questions p{
+    padding: 0 !important;
+}
+.questions p span{
+    font-size: clamp(30px,3vw,35px) !important;
+}
