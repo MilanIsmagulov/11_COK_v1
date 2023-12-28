@@ -22,6 +22,10 @@ body{
     min-height: 100%;
 }
 
+#f_1_2{
+    display: none;
+}
+
 .black_header{
     padding: 30px;
     display: flex;
@@ -279,5 +283,13 @@ body{
     .fifth_column{
         transform: translateY(0);
         margin-left: 0;
+    }
+    
+    #f_1_2{
+        display: block;
+    }
+    
+    #f_1_1{
+        display: none;
     }
 }

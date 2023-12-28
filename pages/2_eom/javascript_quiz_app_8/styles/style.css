@@ -17,6 +17,10 @@ body{
     background: #fff;
 }
 
+.popup_text img{
+    margin: 0 auto;
+}
+
 .theory_for_test {
     width: 70%;
     display: flex;
