@@ -4,7 +4,7 @@
     overflow-y: auto;
     scroll-snap-align: start;
     padding: 15px;
-    align-items: center !important;
+    align-items: flex-start !important;
     justify-content: flex-start !important;
     flex-direction: column;
     padding: 10px;

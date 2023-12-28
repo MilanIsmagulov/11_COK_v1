@@ -69,9 +69,6 @@ body{
 }
 
 .content{
-    overflow-y: auto;
-    scroll-snap-align: start;
-    height: 95%;
     background-color: rgb(222, 235, 247);
     border-radius: 50px;
     padding: 25px;

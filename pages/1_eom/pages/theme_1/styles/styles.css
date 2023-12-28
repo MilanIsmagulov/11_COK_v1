@@ -11,11 +11,6 @@ a{
     text-decoration: none;
 }
 
-p{
-    font-size: clamp(20px,1.8vw,25px) !important;
-    margin: 0.5vw !important;
-}
-
 body{
     background-color: rgb(222, 235, 247);
     height: 100vh;
@@ -55,7 +50,7 @@ body{
 
 .main_window h2{
     color: rgb(255, 114, 118);
-    padding: 0px 0px 20px 10px;
+    padding: 0px 25px 25px 25px;
     font-size: 30px;
 }
 
@@ -86,7 +81,6 @@ body{
 .content{
     display: flex;
     flex-direction: column;
-    scroll-snap-align: start;
     padding: 35px;
     margin: 0px 25px 25px 0px;
     
@@ -304,7 +298,7 @@ body{
 
 #second_color{
     color: blue;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .modal-content {
@@ -426,17 +420,18 @@ body{
 }
 
 .content_img p{
-margin: auto;
-padding: 10px;
-font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+    font-size: 20px;
 }
 
 .content_img_notmodal{
-    padding-left: 40px;
+    padding: 40px;
 }
-.content_img_notmodal p{
-    text-align: center;
-}
+
 @media (max-width: 1445px){
     .black_header{
         text-align: center;
@@ -455,30 +450,22 @@ font-size: 20px;
         align-items: center;
         flex-direction: column;
     }
-    
-    .first_part{
-        flex-direction: column;
-    }
 }
 
-@media (max-width: 1180px){
+@media (max-width: 1131px){
     .content img{
         margin-left: 0;
         margin-right: 0;
         height: 300px;
-    }
-    .text_content{
-        padding: 0 !important;
-    }
-    .content{
-        padding: 5px !important;
-        margin: 0 !important;
     }
 
     .text_content{
         margin-top: 25px;
     }
 
+    .first_part{
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 1131px){
@@ -579,6 +566,7 @@ font-size: 20px;
     .third_part li{
         font-size: 20px;
     }
+    
 }
 
 @media (max-width: 456px){

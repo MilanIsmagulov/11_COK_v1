@@ -16,29 +16,6 @@ body{
     height: 100vh;
 }
 
-p{
-    font-size: clamp(20px,1.8vw,25px) !important;
-    margin: 0.5vw !important;
-    padding-left: 2vw !important;
-    padding-bottom: 0.25vw !important;
-    padding-right: 2vw !important;
-}
-
-p:last-child{
-    padding-left: 25px !important;
-    padding-bottom: 10px !important;
-}
-
-li{
-    font-size: clamp(20px,1.8vw,25px) !important;
-    margin: 0.5vw !important;
-    margin-left: 55px !important;
-    padding-left: 15px;
-}
-
-h1{
-    font-size: clamp(25px,1.8vw,35px) !important;
-}
 .container{
     height: 100%;
 }

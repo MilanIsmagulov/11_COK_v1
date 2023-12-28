@@ -16,19 +16,11 @@ body{
     height: 100vh;
 }
 
-p{
-    font-size: clamp(20px,1.8vw,25px) !important;
-    margin: 0.5vw !important;
-}
-
-li{
-    font-size: clamp(20px,1.8vw,25px) !important;
-    margin: 0.5vw !important;
-}
-
 .container{
     height: 100%;
 }
+
+
 
 .black_header{
     padding: 30px;
@@ -60,7 +52,7 @@ li{
 
 .main_window h2{
     color: rgb(255, 114, 118);
-    padding: 25px 25px 25px 0px;
+    padding: 0px 25px 25px 25px;
     font-size: 30px;
 }
 
@@ -91,7 +83,6 @@ li{
 .content{
     display: flex;
     flex-direction: column;
-    scroll-snap-align: start;
     padding: 35px;
     margin: 0px 25px 25px 0px;
     
@@ -104,7 +95,7 @@ li{
 }
 
 .text_content{
-    padding: 10px 10px;
+    padding: 45px;
     font-size: 30px;
 }
 
@@ -112,7 +103,7 @@ li{
 
 .content p{
     margin: 25px;
-    font-size: 30px;
+    /* font-size: 30px; */
 
 }
 
@@ -417,12 +408,9 @@ font-size: 20px;
 }
 
 .content_img_notmodal{
-    text-align: center !important;
-    padding: 30px;
+    padding: 40px;
 }
-.content_img_notmodal p{
-    font-size: 20px !important;
-}
+
 @media (max-width: 1445px){
     .black_header{
         text-align: center;
@@ -443,7 +431,7 @@ font-size: 20px;
     }
 }
 
-@media (max-width: 1180px){
+@media (max-width: 1131px){
     .content img{
         margin-left: 0;
         margin-right: 0;
@@ -457,17 +445,15 @@ font-size: 20px;
     .first_part{
         flex-direction: column;
     }
+}
+
+@media (max-width: 1131px){
     .content_img{
         margin-left: 0;
         margin-right: 0;
         padding-left: 16px;
         padding-right: 16px;
         height: auto;
-    }
-
-    .content {
-        margin: 0 !important;
-        padding: 10px !important;
     }
 
     .text_content{
@@ -485,6 +471,7 @@ font-size: 20px;
     .anim_buttons a div {
         margin-bottom: 0;
     }
+    
 }
 
 @media (max-width: 618px){

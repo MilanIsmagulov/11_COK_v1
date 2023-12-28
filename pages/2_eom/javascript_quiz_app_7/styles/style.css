@@ -9,6 +9,14 @@
     box-sizing: border-box;
 }
 
+.popup_img_w{
+    width: auto !important;
+}
+
+.popup_img_table{
+    width: 100% !important;
+}
+
 a{
     text-decoration: none;
 }

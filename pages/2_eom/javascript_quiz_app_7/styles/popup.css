@@ -18,6 +18,10 @@
     margin-left: 0px;
 }
 
+.step_marker_and_buttons{
+    padding-bottom: 25px !important;
+}
+
 .popup_text p{
     width: 94%;
     text-align: center;

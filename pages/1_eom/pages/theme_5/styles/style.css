@@ -58,7 +58,7 @@ body{
     font-size: 30px;
     margin-top: 15px;
     margin-bottom: 25px;
-
+    color: rgb(255, 114, 118);
 }
 
 .container h2 span{
@@ -143,61 +143,23 @@ body{
     justify-content: center;
 }
 
-.list_part ol{
-    margin: 45px;
+.list_part ul{
+    margin: 35px;
     font-size: 30px;
 }
 
-.list_part ol li::marker{
+.list_part ul li::marker{
+    font-size: 45px;
     margin-top: 25px;
-    font-weight: 600;
     vertical-align: middle;
     color: #0070c0;
 }
 
-.list_part ol li{
-    margin-bottom: 10px;
+.list_part ul li{
+    margin-bottom: 25px;
     font-size: 30px;
 }
 
 .shema_part img{
     width: 70%;
-}
-
-.table_part{
-    display: flex;
-    align-items: center;
-    margin-bottom: 50px;
-}
-
-.table_part img{
-    height: 500px;
-    width: auto;
-    background-color: white;
-    padding-left: 60px;
-    border-radius: 50px;
-}
-
-.table_part p{
-    font-size: 30px;
-    margin-left: 35px;
-    margin-right: 25px;
-}
-
-.middle_part{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 35px;
-}
-
-.middle_part img{
-    width: 50%;
-    border-radius: 50px;
-}
-
-.middle_part p{
-    font-size: 30px;
-    margin: 15px;
 }
